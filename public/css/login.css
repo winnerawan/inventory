@@ -1,0 +1,21 @@
+html,body{
+    overflow-x: hidden!important;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    background: #f9f9f9;
+    align-content: left;
+    font-size: 15px;
+    background-image: url(../img/pat_03.png), url(../img/login-bg.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: 0 0;
+    background-size: 5px 5px, cover;
+}
+#main_cont {
+    background: rgba(255,255,255,0.5);
+    padding: 20px;
+    align-self: left;
+    align-content: left;
+    width: 520px;
+    margin-right: auto;
+}
