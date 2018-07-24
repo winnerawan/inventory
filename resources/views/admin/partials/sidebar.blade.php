@@ -53,7 +53,7 @@
             <ul id="sidebarnav">
                 {{--<li class="nav-devider"></li>--}}
                 <li class="nav-small-cap">NAVIGASI</li>
-                <li> <a class="waves-effect waves-dark" href="" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
+                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
 
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Kategori</span></a>

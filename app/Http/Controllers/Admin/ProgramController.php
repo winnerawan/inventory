@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Program;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProgramController extends Controller
 {
@@ -48,7 +49,11 @@ class ProgramController extends Controller
 
         $program->save();
 
+        if (Auth::user()->role->id == 1) {
+            return redirect('admin/program');
+        }
         return redirect('admin/program');
+
     }
 
     /**

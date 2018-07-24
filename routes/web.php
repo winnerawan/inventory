@@ -33,8 +33,8 @@ Route::get('/denied', function () {
 //Route::get('admin/home', 'Admin\DashboardController@dashboard')->middleware('admin');
 Route::group(['middleware' => 'admin'], function () {
     Route::get('admin/home', 'Admin\DashboardController@dashboard');
-    Route::resource('admin/category', 'Admin\CategoryController');
-    Route::resource('admin/program', 'Admin\ProgramController');
+    Route::resource('admin/category', 'Admin\CategoryController')->middleware('admin');
+    Route::resource('admin/program', 'Admin\ProgramController')->middleware('admin');
     Route::resource('admin/users', 'Admin\UserController');
     Route::resource('admin/stuff', 'Admin\StuffController');
     Route::resource('admin/item', 'Admin\ItemController');
@@ -48,8 +48,8 @@ Route::group(['middleware' => 'admin'], function () {
 
 Route::group(['middleware' => 'unit'], function () {
     Route::get('unit/home', 'Unit\DashboardController@dashboard');
-    Route::resource('unit/category', 'Unit\CategoryController');
-    Route::resource('unit/program', 'Unit\ProgramController');
+    Route::resource('unit/category', 'Unit\CategoryController')->middleware('unit');
+//    Route::resource('unit/program', 'Unit\ProgramController');
     Route::resource('unit/stuff', 'Unit\StuffController');
     Route::resource('unit/item', 'Unit\ItemController');
     Route::resource('unit/repair', 'Unit\RepairController');
@@ -60,8 +60,8 @@ Route::group(['middleware' => 'unit'], function () {
 
 Route::group(['middleware' => 'program'], function () {
     Route::get('program/home', 'Program\DashboardController@dashboard');
-    Route::resource('program/category', 'Program\CategoryController');
-    Route::resource('program/program', 'Program\ProgramController');
+//    Route::resource('program/category', 'Program\CategoryController');
+//    Route::resource('program/program', 'Program\ProgramController');
     Route::resource('program/stuff', 'Program\StuffController');
     Route::resource('program/item', 'Program\ItemController');
     Route::resource('program/repair', 'Program\RepairController');

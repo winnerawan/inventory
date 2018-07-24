@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Unit;
 use App\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CategoryController extends Controller
 {
@@ -46,6 +47,11 @@ class CategoryController extends Controller
 //        $category->description = $request->description;
 
         $category->save();
+
+        if (Auth::user()->role->id == 1) {
+            return redirect('admin/category');
+
+        }
 
         return redirect('unit/category');
     }
