@@ -53,7 +53,7 @@
             <ul id="sidebarnav">
                 {{--<li class="nav-devider"></li>--}}
                 <li class="nav-small-cap">NAVIGASI</li>
-                <li> <a class="waves-effect waves-dark" href="{{ url('') }}" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
+                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
 
                 </li>
 

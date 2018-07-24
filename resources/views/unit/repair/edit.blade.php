@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-7 align-self-center">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ url('admin/home') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('unit/home') }}">Home</a></li>
                     <li class="breadcrumb-item">Perbaikan</li>
                 </ol>
             </div>
@@ -41,7 +41,7 @@
                             <h4 class="m-b-0 text-white">Form Pengembalian Perbaikan</h4>
                         </div>
                         <div class="card-body">
-                            {!! Form::model($repair, ['route' => ['admin.repair.update', $repair->id], 'method' => 'PUT', 'files' => true]) !!}                            <div class="form-group">
+                            {!! Form::model($repair, ['route' => ['repair.update', $repair->id], 'method' => 'PUT', 'files' => true]) !!}                            <div class="form-group">
                             <div class="form-group">
                                 <div class="form-body">
                                     <h3 class="card-title">Info Perbaikan</h3>

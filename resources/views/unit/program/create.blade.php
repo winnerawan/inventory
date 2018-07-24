@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-7 align-self-center">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ url('admin/home') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('unit/home') }}">Home</a></li>
                     <li class="breadcrumb-item">Program Studi</li>
                 </ol>
             </div>

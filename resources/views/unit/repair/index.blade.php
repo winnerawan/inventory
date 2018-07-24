@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-7 align-self-center">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ url('admin/home') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('unit/home') }}">Home</a></li>
                     <li class="breadcrumb-item">Perbaikan</li>
                 </ol>
             </div>
@@ -53,7 +53,7 @@
                                     <tbody>
                                     @foreach($repairs as $repair)
                                     <tr>
-                                        <td><a href="{{ url('admin/repair/'. $repair->id.'/edit') }}"> </a>{{ $repair->item->stuff->name }}</td>
+                                        <td><a href="{{ url('unit/repair/'. $repair->id.'/edit') }}"> </a>{{ $repair->item->stuff->name }}</td>
                                         <td>{{ $repair->item->condition->name }}</td>
                                         <td>{{ $repair->quantity }}</td>
                                         <td>{{ $repair->created_at }}</td>
